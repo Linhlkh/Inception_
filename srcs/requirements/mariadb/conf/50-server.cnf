@@ -1,0 +1,14 @@
+[mysqld]
+
+datadir = /var/lib/mysql
+# fofder stock database
+
+socket  = /run/mysqld/mysqld.sock
+# where can find docket
+
+bind_address=*
+# all IP can access
+
+port = 3306
+
+user = mysql
