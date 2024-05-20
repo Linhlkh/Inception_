@@ -2,7 +2,7 @@
 
 sleep 10
 
-# cd /var/www/wordpress
+#cd /var/www/wordpress
 
 if [ ! -e /var/www/wordpress/wp-config.php ]; then
 wp config create	--allow-root \

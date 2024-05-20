@@ -30,10 +30,12 @@ COPY conf/nginx.conf /etc/nginx/nginx.conf
 RUN mkdir -p /var/www/wordpress && chmod 755 /var/www/wordpress
 # /var/www/wordpress: root to find files index(using in file conf nginx)
 
-RUN chown -R www-data:www-data /var/www/wordpress
+RUN chown -R www-data:www-data /var/www/wordpress 
 # change owner recursive(all child file/folder) 
 # www-data:www-dat: user and group using by nginx
 # -->nginx can access to this path
 
 CMD [ "nginx", "-g", "daemon off;" ]
 # keep nginx run in foreground mode, keep container working for other task
+
+
