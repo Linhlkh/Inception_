@@ -6,7 +6,7 @@ datadir = /var/lib/mysql
 socket  = /run/mysqld/mysqld.sock
 # where can find docket
 
-bind_address=*
+bind_address = *
 # all IP can access
 
 port = 3306
