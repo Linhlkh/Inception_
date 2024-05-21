@@ -17,3 +17,5 @@ if [ ! -d /run/php ]; then
 fi
 
 /usr/sbin/php-fpm7.3 -F
+
+exec "$@"
