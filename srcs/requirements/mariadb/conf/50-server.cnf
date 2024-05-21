@@ -4,7 +4,7 @@ datadir = /var/lib/mysql
 # fofder stock database
 
 socket  = /run/mysqld/mysqld.sock
-# where can find docket
+# where can find socket
 
 bind_address = *
 # all IP can access
