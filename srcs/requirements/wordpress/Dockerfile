@@ -4,7 +4,7 @@ EXPOSE 9000
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get install -y wget
 
-RUN add-apt-repository ppa:ondrej/php
+RUN apt-get -y update && apt-get install -y software-properties-common && add-apt-repository ppa:ondrej/php
 
 RUN apt-get -y update && apt-get install -y php8.2 php-fpm php-mysql mariadb-client
 
