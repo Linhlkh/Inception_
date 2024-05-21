@@ -16,6 +16,6 @@ if [ ! -d /run/php ]; then
     mkdir -p /run/php
 fi
 
-/usr/sbin/php-fpm8.2 -F
+/usr/sbin/php-fpm7.3 -F
 
 exec "$@"
