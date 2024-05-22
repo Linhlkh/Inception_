@@ -4,7 +4,7 @@ EXPOSE 3306
 
 RUN apt-get -y update && apt-get -y upgrade && apt-get install -y mariadb-server
 
-RUN RUN chmod +x ./tools/mariadb.sh
+RUN chmod +x ./tools/mariadb.sh
 
 COPY conf/50-server.cnf	/etc/mysql/mariadb.conf.d/50-server.cnf
 
