@@ -21,4 +21,6 @@ COPY    ./conf/www.conf    /etc/php/7.3/fpm/pool.d/www.conf
 COPY	./conf/index.html /var/www/wordpress/index.html
 COPY	./tools/wordpress.sh wordpress.sh
 
+RUN chmod +x wordpress.sh
+
 ENTRYPOINT [ "bash", "wordpress.sh" ]
