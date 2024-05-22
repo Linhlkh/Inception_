@@ -18,7 +18,7 @@ RUN chmod +x wp-cli.phar && mv wp-cli.phar /usr/local/bin/wp
 # move ... to make command wp can run from anywhere
 
 COPY    ./conf/www.conf    /etc/php/7.3/fpm/pool.d/www.conf
-#COPY	./conf/index.html /var/www/wordpress/index.html
+
 COPY	./tools/wordpress.sh wordpress.sh
 
 RUN chmod +x wordpress.sh
