@@ -24,6 +24,9 @@ fclean: clean
 	sudo rm -rf /home/khle/data/mariadb/*; \
 	fi
 
+	sudo docker volume rm $(docker volume ls -q)
+	sudo docker network rm inception
+
 re: fclean all
 
 .PHONY: all, clean, fclean, re
