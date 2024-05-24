@@ -20,3 +20,4 @@ if [ ! -d /run/php ]; then
 fi
 
 /usr/sbin/php-fpm7.3 -F
+#start php-fpm in foreground mode
